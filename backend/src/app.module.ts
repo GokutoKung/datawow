@@ -4,6 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ConcertModule } from './concert/concert.module';
 import { UserModule } from './user/user.module';
 import { ReservationModule } from './reservation/reservation.module';
+import { HistoryModule } from './history/history.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { ReservationModule } from './reservation/reservation.module';
     ConcertModule,
     UserModule,
     ReservationModule,
+    HistoryModule,
   ],
 })
 export class AppModule { }
